@@ -6,7 +6,7 @@
 /*   By: nabboufe <nabboufe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/19 10:11:49 by nabboufe          #+#    #+#             */
-/*   Updated: 2020/06/10 19:44:54 by nabboufe         ###   ########.fr       */
+/*   Updated: 2020/06/10 21:32:15 by nabboufe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ int			is_pos_int(char *str)
 	while (str[++len + i])
 		if (!ft_isdigit(str[len + i]) || len > 12)
 			return (-1);
-	nb = ft_atoi(str);
+	nb = ft_atol(str);
 	if (nb <= 2147483647)
 		return ((int)nb);
 	return (-1);

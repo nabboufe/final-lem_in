@@ -6,7 +6,7 @@
 /*   By: nabboufe <nabboufe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/19 13:30:12 by nabboufe          #+#    #+#             */
-/*   Updated: 2020/06/10 20:10:14 by nabboufe         ###   ########.fr       */
+/*   Updated: 2020/06/10 21:31:12 by nabboufe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ static int	check_coord(char *cp_line, t_room *room)
 		i++;
 	while (i > 0 && cp_line[i] != ' ')
 		i--;
-	if (!cp_line[i + 1] || (room->y = is_pos_int(&(cp_line[i + 1]))) == -1)
+	if (!cp_line[i] || !cp_line[i + 1] || (room->y = is_pos_int(&(cp_line[i + 1]))) == -1)
 	{
 		free(cp_line);
 		free(room);

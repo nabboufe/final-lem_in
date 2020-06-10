@@ -6,7 +6,7 @@
 /*   By: nabboufe <nabboufe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/18 13:37:04 by nabboufe          #+#    #+#             */
-/*   Updated: 2020/06/10 20:10:00 by nabboufe         ###   ########.fr       */
+/*   Updated: 2020/06/10 21:31:45 by nabboufe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,14 +78,6 @@ typedef struct		s_parser
 	int				step;
 	int				(*f)(char*, t_map*, int*, char*);
 }					t_parser;
-
-typedef struct		s_move
-{
-	t_room			*room;
-	t_room			*room_dest;
-	int				x;
-	int				y;
-}					t_move;
 
 void				parser(t_map *map, t_parser *tab_parser, char *line,
 					char **input);
